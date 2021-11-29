@@ -1,0 +1,50 @@
+package com.asp424.tristagramcompose.utils
+
+import com.asp424.tristagramcompose.data.firebase.models.UserModel
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
+
+var USER = UserModel()
+val database = FirebaseDatabase.getInstance().reference
+const val API_KEY = "key=AAAAuTSj_t4:APA91bHwLNKT4JevuHQwfuBZmw9ItOLJ810Ge3KPQhClWlQXxGMRmiUscOg6VqbhBAsaH_aT5W21HwebC0S0iIyfTe-HQBEj8PcuQdUpqCLcOPr98-702d8t_VNofZ_tU6NKZdJG-NGD"
+const val FOLDER_PROFILE_IMAGE = "profile_image"
+const val FOLDER_FILES = "messages_files"
+const val CHILD_ID = "id"
+const val CHILD_PHONE = "phone"
+const val CHILD_USERNAME = "username"
+const val CHILD_TOKEN = "token"
+const val CHILD_FULLNAME = "fullname"
+const val CHILD_PHOTO_URL = "photoUrl"
+const val CHILD_TEXT = "text"
+const val CHILD_IMAGE = "image"
+const val CHILD_VOICE = "voice"
+const val CHILD_TYPE = "type"
+const val CHILD_FROM = "from"
+const val CHILD_WHO = "who"
+const val CHILD_TIMESTAMP = "timeStamp"
+const val CHILD_COUNT = "counter"
+const val CHILD_STORAGE_PATH = "pathStorage"
+const val CHILD_REGISTRATION_TIMESTAMP = "timeRegistrationStamp"
+const val CHILD_EXIT_TIMESTAMP = "timeExitStamp"
+const val CHILD_FILE_URL = "fileUrl"
+const val NODE_PHONES = "phones"
+const val NODE_PHONES_CONTACTS = "phones_contacts"
+const val NODE_USERS = "users"
+const val NODE_USERNAMES = "usernames"
+const val NODE_MESSAGES = "messages"
+const val NODE_MAIN_LIST = "main_list"
+const val NODE_GROUPS = "groups"
+const val NODE_MEMBERS = "members"
+const val NODE_WRITING = "writing"
+const val FOLDER_GROUPS_IMAGE = "groups_image"
+const val USER_CREATOR = "creator"
+const val USER_MEMBER = "member"
+const val NODE_KEY = "key"
+const val CHILD_KEY = "key"
+const val CHILD_STATE = "state"
+const val ONLINE = "в сети"
+const val TYPING = "печатает..."
+const val TYPE_CHAT = "chat"
+const val TYPE_GROUP = "group"
+const val WAS_READING = "was_reading"

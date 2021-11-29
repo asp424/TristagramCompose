@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tristagram</string>
+    <string name="number">+7xxxxxxxxxx</string>
+    //Messages
+    <string name="code_message">Вам было отправлено sms с кодом. Если код не вставится в поле автоматически, то введите его вручную</string>
+    <string name="reg_message">Номер телефона должен начинаться с ""+7"" и не должен иметь пробелов или других символов </string>
+    //TopBar
+    <string name="enter_code">Введите код</string>
+    <string name="enter_phone">Введите номер телефона</string>
+    <string name="not">New Message</string>
+    <string name="content_desc">content description</string>
+    // Menu
+    <string name="exit_message">Выйти из аккаунта</string>
+    <string name="default_notification_channel_id">123</string>
+
+
+    //MainNavigate
+    <string name="enter_phone_nav">Ввод номера</string>
+    <string name="enter_code_nav">Ввод кода</string>
+    //Toasts
+    <string name="err_message">Заполните правильно все поля</string>
+    <string name="err_message1">Неверный код</string>
+    <string name="err_message2">Неверный формат номера</string>
+    <string name="err_message3">Введите номер телефона</string>
+
+</resources>

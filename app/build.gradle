@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+    defaultConfig {
+        applicationId "com.asp424.tristagramcompose"
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        useIR = true
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.1.0-beta03"
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+    def compose = "1.1.0-beta03"
+    //COMPOSE
+    implementation "androidx.compose.animation:animation:$compose"
+    implementation "androidx.compose.ui:ui:$compose"
+    implementation "androidx.compose.foundation:foundation:$compose"
+    implementation "androidx.compose.material:material-icons-core:$compose"
+    implementation "androidx.compose.material:material-icons-extended:$compose"
+    implementation "androidx.compose.material:material:$compose"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0'
+    implementation "androidx.compose.runtime:runtime:$compose"
+    implementation "androidx.compose.runtime:runtime-livedata:$compose"
+    implementation "androidx.compose.compiler:compiler:$compose"
+    implementation "androidx.paging:paging-compose:1.0.0-alpha14"
+
+    //Navigation compose
+    implementation "androidx.navigation:navigation-compose:2.4.0-beta02"
+
+    //compose accompanist
+    // implementation 'com.google.accompanist:accompanist-systemuicontroller:0.21.1-beta'
+    // implementation "com.google.accompanist:accompanist-swiperefresh:0.21.1-beta"
+    implementation "com.google.accompanist:accompanist-insets:0.21.1-beta"
+    implementation "com.google.accompanist:accompanist-insets-ui:0.21.1-beta"
+    implementation "com.google.accompanist:accompanist-glide:0.10.0"
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+
+    //VM, livecycle
+    def lifecycle_version = "2.4.0"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    //Dagger-2
+    implementation 'com.google.dagger:dagger:2.37'
+    kapt 'com.google.dagger:dagger-compiler:2.37'
+
+    //ImageCropper
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    //Room library
+    def room_version = "2.3.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //KeyboardShowListener
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //Snapper
+    implementation "dev.chrisbanes.snapper:snapper:0.1.0"
+
+    //Any
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation "com.google.android.material:material:1.4.0"
+
+    implementation "androidx.appcompat:appcompat:1.4.0"
+    implementation "androidx.activity:activity-ktx:1.4.0"
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "795452112606",
+    "project_id": "tristagramcompose",
+    "storage_bucket": "tristagramcompose.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795452112606:android:1dd7e9e9a2d0f6fc7a0c4f",
+        "android_client_info": {
+          "package_name": "com.asp424.tristagramcompose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795452112606-r33ckepdag6i0bjq9lc7c2pffk2nrmhd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.asp424.tristagramcompose",
+            "certificate_hash": "454a4e581bb02bc1661e57fac7c7f016b5e31845"
+          }
+        },
+        {
+          "client_id": "795452112606-hnesuegjr78auj7p16ignisfls8d0cos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4dGjamb-TqbX-cHqZTKgFTKp-0OCsIac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795452112606-hnesuegjr78auj7p16ignisfls8d0cos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
